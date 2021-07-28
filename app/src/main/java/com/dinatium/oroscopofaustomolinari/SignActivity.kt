@@ -1,22 +1,22 @@
 package com.dinatium.oroscopofaustomolinari
 
-import android.annotation.SuppressLint
-import android.graphics.BitmapFactory
-import android.graphics.ImageDecoder
+
+import android.content.Intent
 import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.Window
 import android.widget.*
 import org.json.JSONObject
 import java.net.URL
-import java.text.SimpleDateFormat
-import java.util.*
 
 class SignActivity : AppCompatActivity() {
 
     var sign: String? = "Ariete"
+    var signsuccessivo: String? = "Toro"
+    var signprecedente: String? = "Pesci"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,22 +28,85 @@ class SignActivity : AppCompatActivity() {
         }
         findViewById<TextView>(R.id.title).text = sign
 
+        val nextSign: Button = findViewById(R.id.next)
+        val previousSign: Button = findViewById(R.id.previous)
+
         when (sign) {
-            "Ariete" -> findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.ariessymbol))
-            "Toro" -> findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.taurussymbol))
-            "Gemelli" -> findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.geminisymbol))
-            "Cancro" -> findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.cancersymbol))
-            "Leone" -> findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.leosymbol))
-            "Vergine" -> findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.virgosymbol))
-            "Bilancia" -> findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.librasymbol))
-            "Scorpione" -> findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.scorpiosymbol))
-            "Sagittario" -> findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.sagittariussymbol))
-            "Capricorno" -> findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.capricornsymbol))
-            "Acquario" -> findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.aquariussymbol))
-            "Pesci" -> findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.piscessymbol))
+            "Ariete" -> {
+                findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.ariessymbolw))
+                signsuccessivo = "Toro"
+                signprecedente = "Pesci"
+            }
+            "Toro" -> {
+                findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.taurussymbolw))
+                signsuccessivo = "Gemelli"
+                signprecedente = "Ariete"
+            }
+            "Gemelli" -> {
+                findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.geminisymbolw))
+                signsuccessivo = "Cancro"
+                signprecedente = "Toro"
+            }
+            "Cancro" -> {
+                findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.cancersymbolw))
+                signsuccessivo = "Leone"
+                signprecedente = "Gemelli"
+            }
+            "Leone" -> {
+                findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.leosymbolw))
+                signsuccessivo = "Vergine"
+                signprecedente = "Cancro"
+            }
+            "Vergine" -> {
+                findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.virgosymbolw))
+                signsuccessivo = "Bilancia"
+                signprecedente = "Leone"
+            }
+            "Bilancia" -> {
+                findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.librasymbolw))
+                signsuccessivo = "Scorpione"
+                signprecedente = "Vergine"
+            }
+            "Scorpione" -> {
+                findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.scorpiosymbolw))
+                signsuccessivo = "Sagittario"
+                signprecedente = "Bilancia"
+            }
+            "Sagittario" -> {
+                findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.sagittariussymbolw))
+                signsuccessivo = "Capricorno"
+                signprecedente = "Scorpione"
+            }
+            "Capricorno" -> {
+                findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.capricornsymbolw))
+                signsuccessivo = "Acquario"
+                signprecedente = "Sagittario"
+            }
+            "Acquario" -> {
+                findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.aquariussymbolw))
+                signsuccessivo = "Pesci"
+                signprecedente = "Capricorno"
+            }
+            "Pesci" -> {
+                findViewById<ImageView>(R.id.signImg).setImageDrawable(getDrawable(R.drawable.piscessymbolw))
+                signsuccessivo = "Ariete"
+                signprecedente = "Acquario"
+            }
             else -> {
                 //Lascio tutto come è perchè vi è un errore
             }
+        }
+
+        nextSign.setOnClickListener {
+            val i = Intent(applicationContext, SignActivity::class.java)
+            i.putExtra("sign", signsuccessivo)
+            startActivity(i)
+        }
+
+        previousSign.setOnClickListener {
+            val i = Intent(applicationContext, SignActivity::class.java)
+            i.putExtra("sign", signprecedente)
+            startActivity(i)
         }
 
         loadOroscopo().execute()
@@ -63,15 +126,12 @@ class SignActivity : AppCompatActivity() {
 
         override fun doInBackground(vararg params: String?): String? {
             val response = try {
-                URL("https://visualradio.altervista.org/oroscopo.json").readText(
+                URL("https://www.faustomolinari.it/oroscopo/oroscopo.json").readText(
                     Charsets.UTF_8
                 )
             } catch (e: Exception) {
-                Log.e("Error caricamento:", e.printStackTrace().toString())
                 return null
             }
-
-            Log.e("Error:", response)
 
             return response
         }
@@ -79,8 +139,8 @@ class SignActivity : AppCompatActivity() {
         override fun onPostExecute(result: String?) {
             try {
                 val jsonObj = JSONObject(result)
-                val author = jsonObj.getJSONObject("author")
-                val date = jsonObj.getJSONObject("date")
+                val author = jsonObj.getString("author")
+                val date = jsonObj.getString("date")
                 var name: String?
                 var description: String?
                 when (sign) {
@@ -151,7 +211,9 @@ class SignActivity : AppCompatActivity() {
                 }
 
                 findViewById<TextView>(R.id.date).text = "Ultimo aggiornamento: " + date
-                findViewById<TextView>(R.id.title).text = name
+                if (name != null) {
+                    findViewById<TextView>(R.id.title).text = name.uppercase()
+                }
                 findViewById<TextView>(R.id.signText).text = description
 
                 findViewById<ProgressBar>(R.id.caricamento).visibility = View.GONE
