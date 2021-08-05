@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/faubgdark"
+    android:background="@drawable/bgpexelsfrankcone"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -61,12 +60,13 @@
                         android:id="@+id/arieteButton"
                         android:layout_width="110dp"
                         android:layout_height="120dp"
+                        android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/ariessymbolw"
                         android:text="Ariete"
-                        android:textSize="10sp"
-                        android:tint="@color/white"
                         android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:tint="@color/white"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -83,11 +83,12 @@
                         android:id="@+id/toroButton"
                         android:layout_width="110dp"
                         android:layout_height="120dp"
+                        android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/taurussymbolw"
                         android:text="Toro"
-                        android:textSize="10sp"
                         android:textColor="@color/white"
+                        android:textSize="11sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -104,11 +105,12 @@
                         android:id="@+id/gemelliButton"
                         android:layout_width="110dp"
                         android:layout_height="120dp"
+                        android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/geminisymbolw"
                         android:text="Gemelli"
-                        android:textSize="10sp"
                         android:textColor="@color/white"
+                        android:textSize="11sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -133,11 +135,12 @@
                         android:id="@+id/cancroButton"
                         android:layout_width="110dp"
                         android:layout_height="120dp"
+                        android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/cancersymbolw"
                         android:text="Cancro"
-                        android:textSize="10sp"
                         android:textColor="@color/white"
+                        android:textSize="11sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -154,11 +157,11 @@
                         android:id="@+id/leoneButton"
                         android:layout_width="110dp"
                         android:layout_height="120dp"
-                        android:backgroundTint="#00FFFFFF"
+                        android:background="@drawable/linearbg"
                         android:drawableTop="@drawable/leosymbolw"
                         android:text="Leone"
-                        android:textSize="10sp"
                         android:textColor="@color/white"
+                        android:textSize="11sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -175,11 +178,12 @@
                         android:id="@+id/vergineButton"
                         android:layout_width="110dp"
                         android:layout_height="120dp"
+                        android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/virgosymbolw"
                         android:text="Vergine"
                         android:textColor="@color/white"
-                        android:textSize="10sp"
+                        android:textSize="11sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -204,11 +208,12 @@
                         android:id="@+id/bilanciaButton"
                         android:layout_width="110dp"
                         android:layout_height="120dp"
+                        android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/librasymbolw"
                         android:text="Bilancia"
-                        android:textSize="10sp"
                         android:textColor="@color/white"
+                        android:textSize="11sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -225,11 +230,12 @@
                         android:id="@+id/scorpioneButton"
                         android:layout_width="110dp"
                         android:layout_height="120dp"
+                        android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/scorpiosymbolw"
                         android:text="Scorpione"
-                        android:textSize="10sp"
                         android:textColor="@color/white"
+                        android:textSize="11sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -246,11 +252,12 @@
                         android:id="@+id/sagittarioButton"
                         android:layout_width="110dp"
                         android:layout_height="120dp"
+                        android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/sagittariussymbolw"
                         android:text="Sagiattario"
-                        android:textSize="10sp"
                         android:textColor="@color/white"
+                        android:textSize="11sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -275,11 +282,12 @@
                         android:id="@+id/capricornoButton"
                         android:layout_width="110dp"
                         android:layout_height="120dp"
+                        android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/capricornsymbolw"
                         android:text="Capricorno"
-                        android:textSize="10sp"
                         android:textColor="@color/white"
+                        android:textSize="11sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -296,11 +304,12 @@
                         android:id="@+id/acquarioButton"
                         android:layout_width="110dp"
                         android:layout_height="120dp"
+                        android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/aquariussymbolw"
                         android:text="Acquario"
-                        android:textSize="10sp"
                         android:textColor="@color/white"
+                        android:textSize="11sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -317,11 +326,12 @@
                         android:id="@+id/pesciButton"
                         android:layout_width="110dp"
                         android:layout_height="120dp"
+                        android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/piscessymbolw"
                         android:text="Pesci"
-                        android:textSize="10sp"
                         android:textColor="@color/white"
+                        android:textSize="11sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>

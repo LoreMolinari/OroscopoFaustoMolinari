@@ -2,18 +2,20 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/faubgdark"
+    android:background="@drawable/bgfaubgdark"
     android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:layout_marginTop="100dp"
         android:layout_gravity="center"
-        android:padding="20dp">
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/linearbg"
+        android:padding="25dp">
 
         <LinearLayout
             android:id="@+id/titleContainer"
@@ -79,8 +81,9 @@
                         android:id="@+id/signImg"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
+                        android:padding="20dp"
                         ads:srcCompat="@drawable/ariessymbolw"
-                        android:padding="20px"/>
+                        android:contentDescription="Segno zodiacale immagine" />
 
                 </LinearLayout>
 
@@ -114,12 +117,12 @@
                     android:id="@+id/signText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:backgroundTint="#00FFFFFF"
-                    android:textColor="@color/white"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Riceverete alcune interessanti proposte di collaborazione: valutate a fondo. Serata in allegria."
+                    android:text="Errore"
+                    android:textColor="@color/white"
                     android:textSize="30sp"
                     app:iconTintMode="multiply" />
 
@@ -131,17 +134,36 @@
                 android:layout_gravity="left"
                 android:layout_margin="5dp"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="RtlHardcoded">
 
                 <TextView
                     android:id="@+id/date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#00FFFFFF"
-                    android:textColor="@color/white"
                     android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:backgroundTint="#00FFFFFF"
                     android:text="Ultimo aggiornamento: 30.06.2021"
-                    android:textSize="15sp"/>
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00FFFFFF"
+                    android:drawableTop="@drawable/homepage" />
 
             </LinearLayout>
 

@@ -1,23 +1,23 @@
 package com.dinatium.oroscopofaustomolinari
 
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.AsyncTask
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.view.Window
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import org.json.JSONObject
 import java.net.URL
 
 class SignActivity : AppCompatActivity() {
 
     var sign: String? = "Ariete"
-    var signsuccessivo: String? = "Toro"
-    var signprecedente: String? = "Pesci"
+    private var signsuccessivo: String? = "Toro"
+    private var signprecedente: String? = "Pesci"
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign)
@@ -30,6 +30,7 @@ class SignActivity : AppCompatActivity() {
 
         val nextSign: Button = findViewById(R.id.next)
         val previousSign: Button = findViewById(R.id.previous)
+        val homeButton: Button = findViewById(R.id.home)
 
         when (sign) {
             "Ariete" -> {
@@ -97,6 +98,11 @@ class SignActivity : AppCompatActivity() {
             }
         }
 
+        homeButton.setOnClickListener {
+            val i = Intent(applicationContext, MainActivity::class.java)
+            startActivity(i)
+        }
+
         nextSign.setOnClickListener {
             val i = Intent(applicationContext, SignActivity::class.java)
             i.putExtra("sign", signsuccessivo)
@@ -109,12 +115,12 @@ class SignActivity : AppCompatActivity() {
             startActivity(i)
         }
 
-        loadOroscopo().execute()
+        LoadOroscopo().execute()
     }
 
 
-
-    inner class loadOroscopo : AsyncTask<String, Void, String>() {
+    @SuppressLint("StaticFieldLeak")
+    inner class LoadOroscopo : AsyncTask<String, Void, String>() {
         override fun onPreExecute() {
             super.onPreExecute()
             /* Showing the ProgressBar, Making the main design GONE */
@@ -139,7 +145,6 @@ class SignActivity : AppCompatActivity() {
         override fun onPostExecute(result: String?) {
             try {
                 val jsonObj = JSONObject(result)
-                val author = jsonObj.getString("author")
                 val date = jsonObj.getString("date")
                 var name: String?
                 var description: String?
@@ -210,7 +215,7 @@ class SignActivity : AppCompatActivity() {
                     }
                 }
 
-                findViewById<TextView>(R.id.date).text = "Ultimo aggiornamento: " + date
+                findViewById<TextView>(R.id.date).text = "Ultimo aggiornamento: $date"
                 if (name != null) {
                     findViewById<TextView>(R.id.title).text = name.uppercase()
                 }
