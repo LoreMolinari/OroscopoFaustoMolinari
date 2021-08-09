@@ -27,7 +27,7 @@
                 android:padding="10dp"
                 android:text="Oroscopanzia by Fausto Molinari"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="22sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -45,6 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -65,7 +66,7 @@
                         android:drawableTop="@drawable/ariessymbolw"
                         android:text="Ariete"
                         android:textColor="@color/white"
-                        android:textSize="11sp"
+                        android:textSize="10sp"
                         android:tint="@color/white"
                         app:iconTintMode="multiply" />
 
@@ -88,7 +89,7 @@
                         android:drawableTop="@drawable/taurussymbolw"
                         android:text="Toro"
                         android:textColor="@color/white"
-                        android:textSize="11sp"
+                        android:textSize="10sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -110,7 +111,7 @@
                         android:drawableTop="@drawable/geminisymbolw"
                         android:text="Gemelli"
                         android:textColor="@color/white"
-                        android:textSize="11sp"
+                        android:textSize="10sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -140,7 +141,7 @@
                         android:drawableTop="@drawable/cancersymbolw"
                         android:text="Cancro"
                         android:textColor="@color/white"
-                        android:textSize="11sp"
+                        android:textSize="10sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -161,7 +162,7 @@
                         android:drawableTop="@drawable/leosymbolw"
                         android:text="Leone"
                         android:textColor="@color/white"
-                        android:textSize="11sp"
+                        android:textSize="10sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -183,7 +184,7 @@
                         android:drawableTop="@drawable/virgosymbolw"
                         android:text="Vergine"
                         android:textColor="@color/white"
-                        android:textSize="11sp"
+                        android:textSize="10sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -213,7 +214,7 @@
                         android:drawableTop="@drawable/librasymbolw"
                         android:text="Bilancia"
                         android:textColor="@color/white"
-                        android:textSize="11sp"
+                        android:textSize="10sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -235,7 +236,7 @@
                         android:drawableTop="@drawable/scorpiosymbolw"
                         android:text="Scorpione"
                         android:textColor="@color/white"
-                        android:textSize="11sp"
+                        android:textSize="10sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -257,7 +258,7 @@
                         android:drawableTop="@drawable/sagittariussymbolw"
                         android:text="Sagiattario"
                         android:textColor="@color/white"
-                        android:textSize="11sp"
+                        android:textSize="10sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -287,7 +288,7 @@
                         android:drawableTop="@drawable/capricornsymbolw"
                         android:text="Capricorno"
                         android:textColor="@color/white"
-                        android:textSize="11sp"
+                        android:textSize="10sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -309,7 +310,7 @@
                         android:drawableTop="@drawable/aquariussymbolw"
                         android:text="Acquario"
                         android:textColor="@color/white"
-                        android:textSize="11sp"
+                        android:textSize="10sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
@@ -331,7 +332,7 @@
                         android:drawableTop="@drawable/piscessymbolw"
                         android:text="Pesci"
                         android:textColor="@color/white"
-                        android:textSize="11sp"
+                        android:textSize="10sp"
                         app:iconTintMode="multiply" />
 
                 </LinearLayout>
