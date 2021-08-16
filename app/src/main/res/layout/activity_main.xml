@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/bgpexelsfrankcone"
+    android:background="@drawable/sfondo2"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -59,7 +59,7 @@
 
                     <Button
                         android:id="@+id/arieteButton"
-                        android:layout_width="110dp"
+                        android:layout_width="105dp"
                         android:layout_height="120dp"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
@@ -82,7 +82,7 @@
 
                     <Button
                         android:id="@+id/toroButton"
-                        android:layout_width="110dp"
+                        android:layout_width="105dp"
                         android:layout_height="120dp"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
@@ -104,7 +104,7 @@
 
                     <Button
                         android:id="@+id/gemelliButton"
-                        android:layout_width="110dp"
+                        android:layout_width="105dp"
                         android:layout_height="120dp"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
@@ -134,7 +134,7 @@
 
                     <Button
                         android:id="@+id/cancroButton"
-                        android:layout_width="110dp"
+                        android:layout_width="105dp"
                         android:layout_height="120dp"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
@@ -156,7 +156,7 @@
 
                     <Button
                         android:id="@+id/leoneButton"
-                        android:layout_width="110dp"
+                        android:layout_width="105dp"
                         android:layout_height="120dp"
                         android:background="@drawable/linearbg"
                         android:drawableTop="@drawable/leosymbolw"
@@ -177,7 +177,7 @@
 
                     <Button
                         android:id="@+id/vergineButton"
-                        android:layout_width="110dp"
+                        android:layout_width="105dp"
                         android:layout_height="120dp"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
@@ -207,7 +207,7 @@
 
                     <Button
                         android:id="@+id/bilanciaButton"
-                        android:layout_width="110dp"
+                        android:layout_width="105dp"
                         android:layout_height="120dp"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
@@ -229,7 +229,7 @@
 
                     <Button
                         android:id="@+id/scorpioneButton"
-                        android:layout_width="110dp"
+                        android:layout_width="105dp"
                         android:layout_height="120dp"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
@@ -251,7 +251,7 @@
 
                     <Button
                         android:id="@+id/sagittarioButton"
-                        android:layout_width="110dp"
+                        android:layout_width="105dp"
                         android:layout_height="120dp"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
@@ -281,7 +281,7 @@
 
                     <Button
                         android:id="@+id/capricornoButton"
-                        android:layout_width="110dp"
+                        android:layout_width="105dp"
                         android:layout_height="120dp"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
@@ -303,7 +303,7 @@
 
                     <Button
                         android:id="@+id/acquarioButton"
-                        android:layout_width="110dp"
+                        android:layout_width="105dp"
                         android:layout_height="120dp"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
@@ -325,7 +325,7 @@
 
                     <Button
                         android:id="@+id/pesciButton"
-                        android:layout_width="110dp"
+                        android:layout_width="105dp"
                         android:layout_height="120dp"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
