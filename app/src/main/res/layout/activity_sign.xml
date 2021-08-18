@@ -71,6 +71,7 @@
 
                             <Button
                                 android:id="@+id/previous"
+                                style="?android:attr/borderlessButtonStyle"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:backgroundTint="#00FFFFFF"
@@ -106,6 +107,7 @@
 
                             <Button
                                 android:id="@+id/next"
+                                style="?android:attr/borderlessButtonStyle"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:backgroundTint="#00FFFFFF"
@@ -169,10 +171,11 @@
 
                         <Button
                             android:id="@+id/home"
+                            style="?android:attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:backgroundTint="#00FFFFFF"
-                            android:drawableTop="@drawable/homepage" />
+                            android:drawableTop="@drawable/logo2round" />
 
                     </LinearLayout>
 

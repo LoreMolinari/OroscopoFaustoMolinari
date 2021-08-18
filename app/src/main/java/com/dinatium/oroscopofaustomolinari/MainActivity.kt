@@ -1,6 +1,7 @@
 package com.dinatium.oroscopofaustomolinari
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -84,6 +85,15 @@ class MainActivity : AppCompatActivity() {
         pesciEvent.setOnClickListener {
             val i = Intent(applicationContext, SignActivity::class.java)
             i.putExtra("sign", "Pesci")
+            startActivity(i)
+        }
+
+        val openWebSite: Button = findViewById(R.id.webLink)
+        openWebSite.setOnClickListener {
+            val i = Intent()
+            i.action = Intent.ACTION_VIEW
+            i.addCategory(Intent.CATEGORY_BROWSABLE)
+            i.setData(Uri.parse("https://www.faustomolinari.it/"))
             startActivity(i)
         }
 
