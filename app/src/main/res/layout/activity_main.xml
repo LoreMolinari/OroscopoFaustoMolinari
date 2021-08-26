@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -36,7 +37,7 @@
             android:layout_height="match_parent"
             android:layout_below="@id/titleContainer"
             android:layout_alignParentBottom="false"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="21dp"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingBottom="40dp">
@@ -45,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -53,17 +54,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_margin="5dp"
+                    android:layout_margin="dp"
                     android:gravity="center"
                     android:orientation="horizontal">
 
                     <Button
                         android:id="@+id/arieteButton"
-                        android:layout_width="105dp"
-                        android:layout_height="120dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/ariessymbolw"
+                        android:singleLine="true"
                         android:text="Ariete"
                         android:textColor="@color/white"
                         android:textSize="10sp"
@@ -82,11 +84,12 @@
 
                     <Button
                         android:id="@+id/toroButton"
-                        android:layout_width="105dp"
-                        android:layout_height="120dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/taurussymbolw"
+                        android:singleLine="true"
                         android:text="Toro"
                         android:textColor="@color/white"
                         android:textSize="10sp"
@@ -104,11 +107,12 @@
 
                     <Button
                         android:id="@+id/gemelliButton"
-                        android:layout_width="105dp"
-                        android:layout_height="120dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/geminisymbolw"
+                        android:singleLine="true"
                         android:text="Gemelli"
                         android:textColor="@color/white"
                         android:textSize="10sp"
@@ -121,6 +125,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -134,11 +139,12 @@
 
                     <Button
                         android:id="@+id/cancroButton"
-                        android:layout_width="105dp"
-                        android:layout_height="120dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/cancersymbolw"
+                        android:singleLine="true"
                         android:text="Cancro"
                         android:textColor="@color/white"
                         android:textSize="10sp"
@@ -156,10 +162,11 @@
 
                     <Button
                         android:id="@+id/leoneButton"
-                        android:layout_width="105dp"
-                        android:layout_height="120dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/linearbg"
                         android:drawableTop="@drawable/leosymbolw"
+                        android:singleLine="true"
                         android:text="Leone"
                         android:textColor="@color/white"
                         android:textSize="10sp"
@@ -177,11 +184,12 @@
 
                     <Button
                         android:id="@+id/vergineButton"
-                        android:layout_width="105dp"
-                        android:layout_height="120dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/virgosymbolw"
+                        android:singleLine="true"
                         android:text="Vergine"
                         android:textColor="@color/white"
                         android:textSize="10sp"
@@ -194,6 +202,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -207,11 +216,12 @@
 
                     <Button
                         android:id="@+id/bilanciaButton"
-                        android:layout_width="105dp"
-                        android:layout_height="120dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/librasymbolw"
+                        android:singleLine="true"
                         android:text="Bilancia"
                         android:textColor="@color/white"
                         android:textSize="10sp"
@@ -229,11 +239,12 @@
 
                     <Button
                         android:id="@+id/scorpioneButton"
-                        android:layout_width="105dp"
-                        android:layout_height="120dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/scorpiosymbolw"
+                        android:singleLine="true"
                         android:text="Scorpione"
                         android:textColor="@color/white"
                         android:textSize="10sp"
@@ -251,11 +262,12 @@
 
                     <Button
                         android:id="@+id/sagittarioButton"
-                        android:layout_width="105dp"
-                        android:layout_height="120dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/sagittariussymbolw"
+                        android:singleLine="true"
                         android:text="Sagiattario"
                         android:textColor="@color/white"
                         android:textSize="10sp"
@@ -268,6 +280,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -281,11 +294,13 @@
 
                     <Button
                         android:id="@+id/capricornoButton"
-                        android:layout_width="105dp"
-                        android:layout_height="120dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/capricornsymbolw"
+                        android:singleLine="true"
+                        android:singleLine="true"
                         android:text="Capricorno"
                         android:textColor="@color/white"
                         android:textSize="10sp"
@@ -304,11 +319,12 @@
 
                     <Button
                         android:id="@+id/acquarioButton"
-                        android:layout_width="105dp"
-                        android:layout_height="120dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/aquariussymbolw"
+                        android:singleLine="true"
                         android:text="Acquario"
                         android:textColor="@color/white"
                         android:textSize="10sp"
@@ -326,11 +342,12 @@
 
                     <Button
                         android:id="@+id/pesciButton"
-                        android:layout_width="105dp"
-                        android:layout_height="120dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/linearbg"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/piscessymbolw"
+                        android:singleLine="true"
                         android:text="Pesci"
                         android:textColor="@color/white"
                         android:textSize="10sp"
@@ -343,8 +360,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:gravity="center"
                 android:layout_marginTop="20dp"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -357,19 +374,28 @@
 
                     <Button
                         android:id="@+id/webLink"
-                        android:layout_width="wrap_content"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:backgroundTint="#00FFFFFF"
                         android:drawableTop="@drawable/logo_b72"
                         android:textColor="@color/white"
                         app:iconTintMode="multiply"
                         app:strokeColor="#00FFFFFF"
-                        app:strokeWidth="0dp"
-                        style="?android:attr/borderlessButtonStyle"/>
+                        app:strokeWidth="0dp" />
 
                 </LinearLayout>
 
             </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                margin
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-9907554154077581/5165075814"></com.google.android.gms.ads.AdView>
 
         </LinearLayout>
 
