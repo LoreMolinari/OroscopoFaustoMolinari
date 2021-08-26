@@ -112,7 +112,7 @@ class MainActivity : AppCompatActivity() {
             val i = Intent()
             i.action = Intent.ACTION_VIEW
             i.addCategory(Intent.CATEGORY_BROWSABLE)
-            i.setData(Uri.parse("https://www.faustomolinari.it/"))
+            i.data = Uri.parse("https://www.faustomolinari.it/")
             startActivity(i)
         }
 

@@ -390,10 +390,10 @@
 
             <com.google.android.gms.ads.AdView
                 android:id="@+id/adView"
+                margin
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                margin
                 ads:adSize="BANNER"
                 ads:adUnitId="ca-app-pub-9907554154077581/5165075814"></com.google.android.gms.ads.AdView>
 
